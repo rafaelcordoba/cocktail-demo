@@ -9,9 +9,6 @@ package demo.views.main
 	 */
 	public class BallView extends AppView 
 	{
-		public function BallView()
-		{
-		}
 
 		override public function after_render( request : Request ) : void 
 		{
