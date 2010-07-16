@@ -60,6 +60,7 @@ package cocktail.core.scheme
 		/**
 		 * Caches the xml_node, extract the children and tag_name and invoke
 		 * the parser.
+		 * @param node	XML node to be parsed into this scheme.
 		 */
 		public function Scheme( node : XML ) 
 		{
@@ -94,7 +95,6 @@ package cocktail.core.scheme
 							value = ( value == "true" || value == true );
 						break;
 					}
-					trace( variable.@name, " = ", value );
 					this[ variable.@name ] = value;
 				} 
 		}
