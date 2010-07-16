@@ -17,11 +17,10 @@ package demo.views.main
 			return true;
 		}
 
-		override public function after_render(request : Request) : void 
+		override public function render( request : Request ) : * 
 		{
-			super.after_render( request );
-			
-			trace( 'swf loaded' );
+			request;
+			trace( 'swf rendered' );
 		}
 	}
 }

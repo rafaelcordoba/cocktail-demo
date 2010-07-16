@@ -10,9 +10,9 @@ package demo.views.main
 	 */
 	public class RectView extends AppView
 	{
-		override public function after_render(request : Request) : void 
+		override public function render( request : Request ) : * 
 		{
-			super.after_render( request );
+			request;
 			
 			sprite.graphics.beginFill( 0xccff00 );
 			sprite.graphics.drawRect( 0, 0, 500, 500 );

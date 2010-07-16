@@ -10,7 +10,7 @@ package demo.views.main
 	public class BallView extends AppView 
 	{
 
-		override public function after_render( request : Request ) : void 
+		override public function render( request : Request ) : * 
 		{
 			request;
 			log.info( "Running..." );
