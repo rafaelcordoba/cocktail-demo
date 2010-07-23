@@ -18,13 +18,14 @@ package demo.views.main
 			sprite.graphics.drawRect( 0, 0, 500, 500 );
 			sprite.graphics.endFill( );
 			
+			sprite.buttonMode    = true;
 			sprite.useHandCursor = true;
-			sprite.buttonMode = true;
+			
+			delay( 10, call_after_render );
 		}
 
 		public function click( bullet : Bullet ) : void
 		{
-			trace( 'on click' );
 			
 			go( "/main/internal/" );
 			
