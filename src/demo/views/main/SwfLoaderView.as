@@ -6,7 +6,7 @@ package demo.views.main
 	/**
 	 * This class is a "custom swf loader".
 	 * 
-	 * @author hems | henrique@cocktail.as
+	 * @author hems @ henriquematias.com
 	 */
 	public class SwfLoaderView extends SwfView
 	{

@@ -5,7 +5,7 @@ package demo.views.main
 	import demo.AppView;
 
 	/**
-	 * @author hems | henrique@cocktail.as
+	 * @author hems @ henriquematias.com
 	 */
 	public class BallView extends AppView 
 	{
@@ -18,6 +18,16 @@ package demo.views.main
 			sprite.graphics.beginFill( 0xFF0000 );
 			sprite.graphics.drawCircle( 0, 0, 50 );
 			sprite.graphics.endFill( );
+			
+			sprite.alpha = 0;
+			
+			for( var i : int = 0; i < 10; i++ ) 
+			{
+				delay( i * .1, function( k: Number ): void
+				{
+					sprite.alpha = k * .1;
+				}, i );
+			}
 		}
 	}
 }

@@ -6,7 +6,7 @@ package demo.views.main
 	import demo.AppView;
 
 	/**
-	 * @author hems | henrique@cocktail.as
+	 * @author hems @ henriquematias.com
 	 */
 	public class RectView extends AppView
 	{
@@ -26,7 +26,6 @@ package demo.views.main
 
 		public function click( bullet : Bullet ) : void
 		{
-			
 			go( "/main/internal/" );
 			
 			bullet;
