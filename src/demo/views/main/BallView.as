@@ -21,13 +21,16 @@ package demo.views.main
 			
 			sprite.alpha = 0;
 			
-			for( var i : int = 0; i < 10; i++ ) 
+			for( var i : int = 0; i < 20; i++ ) 
 			{
-				delay( i * .1, function( k: Number ): void
-				{
-					sprite.alpha = k * .1;
-				}, i );
+				delay( i * .05, _step_motion , i );
 			}
+		}
+
+		private function _step_motion( i : Number ) : void 
+		{
+			sprite.alpha = .1 * i;
+			sprite.x += 2;
 		}
 	}
 }
