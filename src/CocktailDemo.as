@@ -2,8 +2,8 @@ package
 {
 	import cocktail.Cocktail;
 
-	import demo.boot.Routes;
 	import demo.boot.Embedder;
+	import demo.boot.Routes;
 
 	import flash.display.Sprite;
 
