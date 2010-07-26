@@ -21,40 +21,43 @@ cocktail.boot = function( path )
 
 cocktail.auto_size = function()
 {
-	$( window ).resize(function() 
+	$( window ).resize( function() 
 	{
-		if( $( window ).width() < cocktail.config.min.width )
-			$( cocktail.config.name ).css( 'width', cocktail.config.min.width );
+		if( $( window ).width() < cocktail.config.bounds.min.width )
+			$( cocktail.config.name ).css( 'width', cocktail.config.bounds.min.width );
 		else
 			$( cocktail.config.name ).css( 'width', cocktail.config.width );
 
-		if( $( window ).height() < cocktail.config.min.height )
-			$( cocktail.config.name ).css( 'height', cocktail.config.min.height );
+		if( $( window ).height() < cocktail.config.bounds.min.height )
+			$( cocktail.config.name ).css( 'height', cocktail.config.bounds.min.height );
 		else
 			$( cocktail.config.name ).css( 'height', cocktail.config.height );
-	});
+	} );
 }
 
 /**
  * Create a swf object for the cocktail boot file
  */
-cocktail.embed = function( container, config, flashvars, params, attributes )
+cocktail.embed = function( config, flashvars, params, attributes )
 {
-	this.config = config;
+	cocktail.config = config;
 	
 	swfobject.embedSWF(
-		cocktail.swf.path( 'boot.swf' ), 
-		container, 
-		config.width,
-		config.height,
+		cocktail.swf.path( '/boot.swf' ), 
+		config.app_id, 
+		config.bounds.width,
+		config.bounds.height,
 		config.player_version,
-		cocktail.swf.path( 'expressinstall.swf' ), 
+		cocktail.swf.path( '/expressinstall.swf' ), 
 		flashvars, 
 		params, 
 		attributes
 	);
 	
-	if( config.min.width || config.min.height ) cocktail.auto_size();
+	if( !eval ( 'cocktail.config.bounds.min' ) ) return;
+	
+	if( cocktail.config.bounds.min.width || cocktail.config.bounds.min.height ) 
+		cocktail.auto_size();
 }
 
 /**
@@ -186,4 +189,4 @@ cocktail.browser.scroll.slide = function( x, y )
 	$( 'html,body' ).animate( props, 500 );
 }
 
-//alert( "cocktail js loaded" );
+alert( "cocktail.js loaded! lets rock" );
