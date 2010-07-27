@@ -21,7 +21,7 @@ package demo.views.main
 			sprite.buttonMode    = true;
 			sprite.useHandCursor = true;
 			
-			delay( 10, call_after_render );
+			//delay( 10, call_after_render );
 		}
 
 		public function click( bullet : Bullet ) : void
