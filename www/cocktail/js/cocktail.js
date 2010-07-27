@@ -23,15 +23,17 @@ cocktail.auto_size = function()
 {
 	$( window ).resize( function() 
 	{
+		var div = $( '#' + cocktail.config.app_id );
+
 		if( $( window ).width() < cocktail.config.bounds.min.width )
-			$( cocktail.config.name ).css( 'width', cocktail.config.bounds.min.width );
+			div.width( cocktail.config.bounds.min.width );
 		else
-			$( cocktail.config.name ).css( 'width', cocktail.config.width );
+			div.width( cocktail.config.bounds.width )
 
 		if( $( window ).height() < cocktail.config.bounds.min.height )
-			$( cocktail.config.name ).css( 'height', cocktail.config.bounds.min.height );
+			div.height( cocktail.config.bounds.min.height );
 		else
-			$( cocktail.config.name ).css( 'height', cocktail.config.height );
+			div.height( cocktail.config.bounds.height );
 	} );
 }
 
@@ -189,4 +191,4 @@ cocktail.browser.scroll.slide = function( x, y )
 	$( 'html,body' ).animate( props, 500 );
 }
 
-alert( "cocktail.js loaded! lets rock" );
+//alert( "cocktail.js loaded! lets rock" );

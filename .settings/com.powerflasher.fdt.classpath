@@ -9,5 +9,5 @@
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/src/cocktail/vendors/e4xparser.swc</AS3Classpath>
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/src/cocktail/vendors/swfaddress.swc</AS3Classpath>
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/src/cocktail/vendors/TweenMax.swc</AS3Classpath>
-<AS3Classpath generateProblems="true" sdkBased="false" type="source" useAsSharedCode="false">cocktail/lib</AS3Classpath>
+<AS3Classpath generateProblems="true" sdkBased="false" type="source" useAsSharedCode="false">cocktail/vendors</AS3Classpath>
 </AS3Classpath>
