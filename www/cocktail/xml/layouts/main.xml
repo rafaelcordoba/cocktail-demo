@@ -1,20 +1,22 @@
 <layout>
 
-	<home>
+	<area id="home">
 		
 		<rect id="text" x="0" y="0" />
 		<img id="img" src="embryo.jpg" />
 		<ball id="ball" x="20" y="20" />
 		<swf_loader src="pretty.swf" />
 		
-		<video id="video" src="cna.flv" streaming="false" buffer="5" auto_play="true" controls="true" volume="0.1" width="" height="" />
+		<player id ="video_player" class="components.player.Player">
+			<video id="video" src="cna.flv" streaming="true" buffer="5" auto_play="true" volume="1" width="800" height="600" />
+			<control id="control" class="components.player.Control" src="../components/player/control.swf" />
+			<buffer id="buffer" class="components.player.Buffer" />
+		</player>
 		
-	</home>
+	</area>
 
-	<internal>
-	
+	<area id="internal">
 		<img id="img" src="embryo.jpg" />
-	
-	</internal>
+	</area>
 		
 </layout>
