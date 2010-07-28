@@ -9,4 +9,5 @@
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/vendors/as3corelib-json.swc</AS3Classpath>
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/vendors/swfaddress.swc</AS3Classpath>
 <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/vendors/as3ds.swc</AS3Classpath>
+<AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">cocktail/vendors/e4xparser.swc</AS3Classpath>
 </AS3Classpath>
