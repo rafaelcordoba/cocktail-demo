@@ -1,20 +1,17 @@
 <layout>
 
-	<home>
-		
-		<rect id="text" x="0" y="0" />
-		<img id="img" src="embryo.jpg" />
-		<ball id="ball" x="20" y="20" />
-		<swf_loader src="pretty.swf" />
-		
-		<video id="video" src="cna.flv" streaming="false" buffer="5" auto_play="true" controls="true" volume="0.1" width="" height="" />
-		
-	</home>
+	<action id="home" target="/main/container:loader">
 
-	<internal>
-	
+		<rect id="rect" x="0" y="0" />
+
+	</action>
+
+	<action id="container">
+
 		<img id="img" src="embryo.jpg" />
-	
-	</internal>
-		
+
+		<view id="loader" />
+
+	</action>
+
 </layout>

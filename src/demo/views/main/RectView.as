@@ -15,7 +15,7 @@ package demo.views.main
 			request;
 			
 			sprite.graphics.beginFill( 0xccff00 );
-			sprite.graphics.drawRect( 0, 0, 500, 500 );
+			sprite.graphics.drawRect( 0, 0, 200, 200 );
 			sprite.graphics.endFill( );
 			
 			sprite.buttonMode    = true;
