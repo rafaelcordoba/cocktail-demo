@@ -1,0 +1,3 @@
+<model>
+	<inline id="inline-test" inject="index" locale="pt" />
+</model>

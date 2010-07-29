@@ -1,0 +1,68 @@
+<layout>
+
+	<!-- 
+	
+	id's must follow this samples: 
+	'video', 'video_player', 'control', 'buffer'
+	
+	<video>
+	
+	streaming
+		value:			true or false
+		description:	if set to false, cocktail will wait the whole video to load
+						before the area is rendered, otherwise, it will only begin
+						when the area is rendered.
+					
+	buffer
+		value:			Number from 0 to whatever
+		description:	it is the amount of seconds the video will buffer before 
+						playing it.
+					
+	auto_play
+		value:			true or false
+		description:	if set to true, the video will start playing when the area
+						is rendered.
+					
+	volume
+		value:			from 0 to 1
+		description:	set the volume of the video.
+	
+	width
+		value:			Number from 1 to whatever
+		description:	force the width of the video to scale.
+		
+	height
+		value:			Number from 1 to whatever
+		description:	force the height of the video to scale. 
+	
+	-->
+
+	<area id="preloaded">
+		<video id="video" src="cna.flv" />
+	</area>
+	
+	<area id="streaming">
+		<video id="video" src="cna.flv" streaming="true" buffer="5" />
+	</area>
+	
+	<area id="paused">
+		<video id="video" src="cna.flv" auto_play="false" />
+	</area>
+	
+	<area id="sized">
+		<video id="video" src="cna.flv" width="800" height="600" />
+	</area>
+	
+	<area id="muted">
+		<video id="video" src="cna.flv" volume="0" />
+	</area>
+	
+	<area id="controls">
+		<player id ="video_player" class="components.player.Player">
+			<video id="video" src="cna.flv" streaming="true" buffer="3" volume="0" />
+			<control id="control" class="components.player.Control" src="../components/player/control.swf" />
+			<buffer id="buffer" class="components.player.Buffer" src="../components/player/buffer.swf" />
+		</player>
+	</area>
+		
+</layout>
