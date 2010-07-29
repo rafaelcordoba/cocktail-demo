@@ -37,32 +37,32 @@
 	
 	-->
 
-	<area id="preloaded">
+	<action id="preloaded">
 		<video id="video" src="cna.flv" />
-	</area>
+	</action>
 	
-	<area id="streaming">
+	<action id="streaming">
 		<video id="video" src="cna.flv" streaming="true" buffer="5" />
-	</area>
+	</action>
 	
-	<area id="paused">
+	<action id="paused">
 		<video id="video" src="cna.flv" auto_play="false" />
-	</area>
+	</action>
 	
-	<area id="sized">
+	<action id="sized">
 		<video id="video" src="cna.flv" width="800" height="600" />
-	</area>
+	</action>
 	
-	<area id="muted">
+	<action id="muted">
 		<video id="video" src="cna.flv" volume="0" />
-	</area>
+	</action>
 	
-	<area id="controls">
+	<action id="controls">
 		<player id ="video_player" class="components.player.Player">
 			<video id="video" src="cna.flv" streaming="true" buffer="3" volume="0" />
 			<control id="control" class="components.player.Control" src="../components/player/control.swf" />
 			<buffer id="buffer" class="components.player.Buffer" src="../components/player/buffer.swf" />
 		</player>
-	</area>
+	</action>
 		
 </layout>
